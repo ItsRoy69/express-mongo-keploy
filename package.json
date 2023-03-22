@@ -4,24 +4,31 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon app.js"
+    "start": "nodemon app.js",
+    "test": "jest"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "assert": "^2.0.0",
     "bcrypt": "^5.0.1",
     "cookie-parser": "^1.4.6",
     "cors": "^2.8.5",
     "dotenv": "^16.0.1",
     "express": "^4.18.1",
     "jsonwebtoken": "^8.5.1",
+    "mocha": "^10.2.0",
     "mongoose": "^6.5.0",
+    "selenium-webdriver": "^4.8.1",
     "socket.io": "^4.5.1",
+    "supertest": "^6.3.3",
     "typescript-sdk": "github:keploy/typescript-sdk",
     "validator": "^13.7.0"
   },
   "devDependencies": {
+    "@jest/globals": "^29.5.0",
+    "jest": "^29.5.0",
     "nodemon": "^2.0.19"
   }
 }

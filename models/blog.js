@@ -1,4 +1,4 @@
-require("typescript-sdk/dist/integrations/mongoose/require")
+
 const mongoose = require("mongoose");
 
 const blogSchema = new mongoose.Schema({

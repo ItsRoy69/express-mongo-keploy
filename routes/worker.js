@@ -1,4 +1,4 @@
-require("typescript-sdk/dist/integrations/express/register");
+
 const express = require("express");
 const router = express.Router();
 const Worker = require('../models/workers');
@@ -15,14 +15,16 @@ router.post("/register", async (req, res) => {
       name,
       email,
       profession,
-      password
+      password,
+      phone
     } = req.body;
   
     if (
         !name||
         !email||
         !profession||
-        !password
+        !password||
+        !phone
     ) {
       return res.status(422).json({ error: "Please fill all the fields." });
     }
@@ -36,6 +38,7 @@ router.post("/register", async (req, res) => {
   
      
         const worker = new Worker({
+            phone,
             email,
             name,
             password,

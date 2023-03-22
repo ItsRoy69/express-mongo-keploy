@@ -1,4 +1,4 @@
-require("typescript-sdk/dist/integrations/mongoose/require")
+
 const mongoose = require("mongoose");
 
 const DB = `mongodb+srv://${process.env.USER_NAME}:${process.env.USER_PASS}@cluster0.t1qyv.mongodb.net/?retryWrites=true&w=majority`;

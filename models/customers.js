@@ -1,10 +1,10 @@
-require("typescript-sdk/dist/integrations/mongoose/require")
+
 const mongoose = require("mongoose");
 const validator = require("validator");
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 
-const customerSchema = new mongoose.Schema({ 
+const customerSchema = new mongoose.Schema({
   name: {
     type: String,
     required: true,

@@ -12,7 +12,7 @@ router.get("/", (req, res) => {
 });
 
 router.post("/register", async (req, res) => {
-    const {    
+    const {
       email,
       name,
       password,

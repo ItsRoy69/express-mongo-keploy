@@ -1,4 +1,4 @@
-require("typescript-sdk/dist/integrations/mongoose/require")
+
 const mongoose = require("mongoose");
 const validator = require("validator");
 const bcrypt = require("bcrypt");
@@ -32,6 +32,11 @@ const workerSchema = new mongoose.Schema({
     required: true,
     trim: true,
   },
+  phone: 
+    {
+      type: Number,
+      required: true,
+    },
 
     orders : [
       {
@@ -39,6 +44,10 @@ const workerSchema = new mongoose.Schema({
         type: String,
         required: true,
       },
+      // phone : {
+      //   type: Number,
+      //   required: true,
+      // },
       email : {
         type: String,
         required: true,

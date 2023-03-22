@@ -70,7 +70,4 @@ io.on("connection", (socket) => {
   });
 });
 
-
-server.listen(port, () => {
-  console.log(`Listening to port ${port}`);
-});
+module.exports = app;

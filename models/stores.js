@@ -1,10 +1,10 @@
-require("typescript-sdk/dist/integrations/mongoose/require")
+
 const mongoose = require("mongoose");
 const validator = require("validator");
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 
-const storeSchema = new mongoose.Schema({ 
+const storeSchema = new mongoose.Schema({
   admin: {
     type: String,
     required: true,
@@ -21,6 +21,16 @@ const storeSchema = new mongoose.Schema({
         throw new Error("Invalid Email.");
       }
     },
+  },
+  stype: {
+    type: String,
+    required: true,
+    trim: true,
+  },
+  sname: {
+    type: String,
+    required: true,
+    trim: true,
   },
   password: {
     type: String,

@@ -13,14 +13,18 @@ router.post("/register", async (req, res) => {
     const {
       admin,
       email,
+      stype,
+      sname,
       password,
       address,
-      items
+      items,
     } = req.body;
   
     if (
         !admin||
         !email||
+        !stype||
+        !sname||
         !password||
         !address||
         !items
@@ -30,8 +34,9 @@ router.post("/register", async (req, res) => {
   
     try {
       const userSearchByEmail = await Store.findOne({ email: email });
+      const userSearchByUsername = await Store.findOne({ sname: sname });
   
-      if (userSearchByEmail) {
+      if (userSearchByEmail || userSearchByUsername) {
         return res.status(422).json({ error: "store already exists." });
       }
   
@@ -39,9 +44,11 @@ router.post("/register", async (req, res) => {
         const store = new Store({
             admin,
             email,
+            stype,
+            sname,
             password,
             address,
-            items
+            items,
         });
   
         const registered = await store.save();
