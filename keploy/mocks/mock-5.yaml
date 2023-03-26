@@ -1,0 +1,13 @@
+version: api.keploy.io/v1beta2
+kind: Generic
+name: mock-5-0
+spec:
+    metadata:
+        filter: '{"email":"jyotirmoyroy649@gmail.com"}'
+        name: findOne
+        type: NO_SQL
+    objects:
+        - type: string
+          data: H4sIAAAAAAAA/1IqzUtJTcvMS01RAgQAAP//1MECtwsAAAA=
+        - type: object
+          data: H4sIAAAAAAAA/7zRTW+jPBQF4L/y6qpLGtnmIzirt4WUmhZIaUhKRhUyXxmTEigkBKfqfx9Fs8pqdt2dxZHufXS+IBE5zMDQcElKXS0LxEme51mqTzFJDVCA57XYwwwq2RxEVzeya6Sh0f+3NRcfk6ypQYHikv/RaXnfn5rucu2GpDcY3VD6aBxWJ1NfFPOtuonNemkvA+kK1g+NxEEVeH056lur9B8+neien/nxCAqIQ1H3MPsFFu/g/fJh3hV9DzPAiPzn3YMCh2ZX7C+dr78RZlBI93fqZCIQLovODPuC9Wwf6pnFDLZr31aWSyeFdEu+fhGBYMS3H2qvjrFHNh+eM5cbJ9zFhGH/PJdxFYtny23jtxcRVHPin3eqX0XIt+/pxHRPsVR703g6vd1tVKKGQ3gWKgvvpg+vPkvk1h5Z+yTzhQnK1QAZMjnmaZbmhJBM4xTBt/JzBM2z58S3V3QSLG/3cTIcltbjgrnp7TCOthvWx/JxTtdJthi7T8cKxyig7IqQ5iRHhV6iIkWmMSWmpqk/TXgZ/cqlkx3XT63oxNrWVwNZOpu11d5mkWr5z/oxd6afVfc6WK8f0ehdEbIpIiUukInRlJpcoxib8P2uQJIMMFO//wQAAP//8YZIXzMDAAA=

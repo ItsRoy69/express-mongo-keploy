@@ -1,0 +1,28 @@
+version: api.keploy.io/v1beta2
+kind: Generic
+name: mock-4-0
+spec:
+    metadata:
+        filter: '{"email":"jyotirmoyroy649@gmail.com"}'
+        name: findOne
+        type: NO_SQL
+    objects:
+        - type: string
+          data: H4sIAAAAAAAA/1IqzUtJTcvMS01RAgQAAP//1MECtwsAAAA=
+        - type: object
+          data: H4sIAAAAAAAA/7yRT2+iQBiHv8rmTY/UwPBH4LQVUIcuYFm14qYhAzO4g0UsIDI0fveN2VNPe9vbc3iS933y+4SUU7DB0JQCFbpaMJkgSmme6VMFZQZIQGjFT2BDKeqON1UtmloYmvX9UBH+PsnrCiRgd/6HcyZte62b+7UHlD0o8oNlLY1uezX1FfMO6j4xq7W7joTPcdvXQonKKGiLQT84RTj/WGxmZCSXC0jAO1a1YP8ChzTwdv+QNqxtwQZFRt+CGUjQ1Ud2ujuffxFsYML/nS1yHnEfb0ashBy3+BTruYMNfDzvto5vTZjwC/L6wiOOUejOq6BKlADt34OFJ/aL+JggrISjJ5Iy4T8c/5zsXnhUeigcj2pYbuTQnVkT078mQm1N4/m6e9qrSI37eOQqjp+m858hTsXBHfD5WdCVCdKXAXLZJArJ8owihHKNWDLcpP+XoAWuh0J3a02i9eMpSftu7SxX2M8e+2Fw/bi6FEvPek3z1dB8LJx42EQW/pKQUURlphcyy2TTmCJT01S4vUmQpj3Y6PYnAAD//19yFeVwAgAA
+---
+version: api.keploy.io/v1beta2
+kind: Generic
+name: mock-4-1
+spec:
+    metadata:
+        filter: '{"_id":"641f2f53fe0a2dddcb5712b6","__v":2}'
+        name: updateOne
+        type: NO_SQL
+        update: '{"$set":{"tokens":[{"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDFmMmY1M2ZlMGEyZGRkY2I1NzEyYjYiLCJpYXQiOjE2Nzk3NjU0NDB9.8JwYy3s86KwXAZ323RvRzi3IRA7FSNI_ygDxIpKydP8","_id":"641f2fc08a1abcbd222c4a90"},{"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDFmMmY1M2ZlMGEyZGRkY2I1NzEyYjYiLCJpYXQiOjE2Nzk4MDE2NDV9.OT-nY_vtTCHPIJb-vxxDJRmufHE9W_cPxrqGCRxUO9I","_id":"641fbd2d0e5f0eb086728443"},{"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDFmMmY1M2ZlMGEyZGRkY2I1NzEyYjYiLCJpYXQiOjE2Nzk4MDQxNjJ9.ka5wpiriWD5Vv2TGZWCp-cU3CNL5udG7qjrSvCSlUxM","_id":"641fc702f1e0810798a49118"}]},"$inc":{"__v":1}}'
+    objects:
+        - type: string
+          data: H4sIAAAAAAAA/1IqzUtJTcvMS01RAgQAAP//1MECtwsAAAA=
+        - type: object
+          data: H4sIAAAAAAAA/6pWSkzOzssvz0lNSU9NUbIqKSpN1VHKzU/JTMtMTXHOL80rUbIy1FEqLShOLSpJTfFMUbLKK83JQYhA1RjoKOUmliRnIDTVAgIAAP///zrTjFwAAAA=

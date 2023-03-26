@@ -1,0 +1,28 @@
+version: api.keploy.io/v1beta2
+kind: Generic
+name: mock-8-0
+spec:
+    metadata:
+        filter: '{"email":"jyotirmoyroy649@gmail.com"}'
+        name: findOne
+        type: NO_SQL
+    objects:
+        - type: string
+          data: H4sIAAAAAAAA/1IqzUtJTcvMS01RAgQAAP//1MECtwsAAAA=
+        - type: object
+          data: H4sIAAAAAAAA/7zRT2+6SBwG8LeymfRIDTP897QWFIcWUEQtbhozwIwdLEIBkaHpe9+YPXUvv1tvz+FJvt9Pni9w5DmYAl2FDDFNYVQmKM/zLNUMiFIdSIDkJb+AKShE1fGmrERTCV21/j6VhH9MsqoEEqD3/IdOTdr2VjX3aw8ofYDyg2Ut9W53M7UVnZ+UQ2KWsROHwuO47SsBwyL0WzZoJ5sFi093+0RGcr0CCfCOli2Y/gNs0oC3+4d5Q9sWTAGU0V/+E5BAV53p5d75+i+CKaDCe0/djIfcw9sRw4DjFl8iLbOxjs/16872rAkVHiP7NQ85RoGzKP0ygT46fPjuXBzc6JwgDINxLpIi4S+2Vyevax4WcxSMZyUotnLgPFkT07slQmlN/fn2OjsoSIn6aOQKjmbGYhPgozg5A66fRb4ygfRjgEw2CSRpluYIoUwllgy+pd8jqL4zR4GzsyZh/HhJjn0X28sV9tLHfhgcLyqvbDm39sdsNTSfrh0N29DCPwhpjnKZakymqWzqBjJVVfltwnoICs+anIl2q3nD946261HsHvZ2/ZhtFTt40a65a3wWzaa3Nx/bwf9ByAwZMUhlE8qGZRLVgtD8dYIIY8+avC+bTO/oqHjxOIqqy1hdndDpnHrvxWIWx5veeUHjzNTL9f8IpspUPWOMGQTmKdUVFXy/SeB47MFU/f43AAD//y7ZNsv2AwAA
+---
+version: api.keploy.io/v1beta2
+kind: Generic
+name: mock-8-1
+spec:
+    metadata:
+        filter: '{"_id":"641f2f53fe0a2dddcb5712b6","__v":4}'
+        name: updateOne
+        type: NO_SQL
+        update: '{"$set":{"tokens":[{"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDFmMmY1M2ZlMGEyZGRkY2I1NzEyYjYiLCJpYXQiOjE2Nzk3NjU0NDB9.8JwYy3s86KwXAZ323RvRzi3IRA7FSNI_ygDxIpKydP8","_id":"641f2fc08a1abcbd222c4a90"},{"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDFmMmY1M2ZlMGEyZGRkY2I1NzEyYjYiLCJpYXQiOjE2Nzk4MDE2NDV9.OT-nY_vtTCHPIJb-vxxDJRmufHE9W_cPxrqGCRxUO9I","_id":"641fbd2d0e5f0eb086728443"},{"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDFmMmY1M2ZlMGEyZGRkY2I1NzEyYjYiLCJpYXQiOjE2Nzk4MDQxNjJ9.ka5wpiriWD5Vv2TGZWCp-cU3CNL5udG7qjrSvCSlUxM","_id":"641fc702f1e0810798a49118"},{"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDFmMmY1M2ZlMGEyZGRkY2I1NzEyYjYiLCJpYXQiOjE2Nzk4MDQyOTJ9.hHrc6tez3JTzzyotcfpog2gkbJhjFATTSvDL2zA86mQ","_id":"641fc784f46cfff7a1dbe634"},{"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDFmMmY1M2ZlMGEyZGRkY2I1NzEyYjYiLCJpYXQiOjE2Nzk4MDQzMDF9.OPOo9Lgj_OBvCqZ0wLDxhUI8bmOSUxAfVjRJSNun-Cw","_id":"641fc78d9a109194a1647005"}]},"$inc":{"__v":1}}'
+    objects:
+        - type: string
+          data: H4sIAAAAAAAA/1IqzUtJTcvMS01RAgQAAP//1MECtwsAAAA=
+        - type: object
+          data: H4sIAAAAAAAA/6pWSkzOzssvz0lNSU9NUbIqKSpN1VHKzU/JTMtMTXHOL80rUbIy1FEqLShOLSpJTfFMUbLKK83JQYhA1RjoKOUmliRnIDTVAgIAAP///zrTjFwAAAA=

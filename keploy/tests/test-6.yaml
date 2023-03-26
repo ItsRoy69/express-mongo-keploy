@@ -1,0 +1,40 @@
+version: api.keploy.io/v1beta2
+kind: Http
+name: test-6
+spec:
+    metadata: {}
+    req:
+        method: POST
+        proto_major: 0
+        proto_minor: 0
+        url: /stores/register
+        header:
+            accept: '*/*'
+            accept-encoding: gzip, deflate, br
+            connection: close
+            content-length: "67"
+            content-type: application/json
+            cookie: jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDFmMmY1M2ZlMGEyZGRkY2I1NzEyYjYiLCJpYXQiOjE2Nzk4MDQxNjJ9.ka5wpiriWD5Vv2TGZWCp-cU3CNL5udG7qjrSvCSlUxM
+            host: localhost:8000
+            user-agent: Thunder Client (https://www.thunderclient.com)
+        body: '{"email":"jyotirmoyroy649@gmail.com","password":"roy649@gmail.com"}'
+        body_type: utf-8
+    resp:
+        status_code: 422
+        header:
+            access-control-allow-origin: '*'
+            content-length: "39"
+            content-type: application/json; charset=utf-8
+            etag: W/"27-80LQoa7tzd1s08dcV0wSp+ZDSgw"
+            x-powered-by: Express
+        body: '{"error":"Please fill all the fields."}'
+        body_type: utf-8
+        status_message: ""
+        proto_major: 0
+        proto_minor: 0
+    objects:
+        - type: error
+          data: H4sIAAAAAAAA/wEAAP//AAAAAAAAAAA=
+    assertions:
+        noise: []
+    created: 1679804282456

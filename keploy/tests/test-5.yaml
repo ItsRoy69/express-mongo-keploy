@@ -1,6 +1,6 @@
 version: api.keploy.io/v1beta2
 kind: Http
-name: test-1
+name: test-5
 spec:
     metadata: {}
     req:
@@ -14,20 +14,20 @@ spec:
             connection: close
             content-length: "136"
             content-type: application/json
-            cookie: jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDFmMWU3N2NhOTM0ZjM1Y2YxZjNmMDYiLCJpYXQiOjE2Nzk3NjMxNTd9.ZEQ2ksVMtUrdIfelqF-9Gb9DCQkZ0na8vqFPnnpxHkA
+            cookie: jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDFmMmY1M2ZlMGEyZGRkY2I1NzEyYjYiLCJpYXQiOjE2Nzk4MDQxNjJ9.ka5wpiriWD5Vv2TGZWCp-cU3CNL5udG7qjrSvCSlUxM
             host: localhost:8000
             user-agent: Thunder Client (https://www.thunderclient.com)
         body: '{"admin":"jyotirmoyroy649@gmail.com","email":"jyotirmoyroy649@gmail.com","password":"roy649@gmail.com","address":"102 MB","items":"Car"}'
         body_type: utf-8
     resp:
-        status_code: 201
+        status_code: 422
         header:
             access-control-allow-origin: '*'
-            content-length: "282"
+            content-length: "33"
             content-type: application/json; charset=utf-8
-            etag: W/"11a-qRJxR8bdNThVNnoSFiPCpKfPPBc"
+            etag: W/"21-Pbp3birho+f3pzU8OXh8UQABxxY"
             x-powered-by: Express
-        body: '{"message":"Registered Successfully!","store":{"admin":"jyotirmoyroy649@gmail.com","email":"jyotirmoyroy649@gmail.com","password":"$2b$10$99H6tVw85PeEg3ZY8mTDTOyJiIsvoy1OjOMsfx5gCfNFqGUBazauu","items":["Car"],"address":"102 MB","_id":"641f2f53fe0a2dddcb5712b6","tokens":[],"__v":0}}'
+        body: '{"error":"store already exists."}'
         body_type: utf-8
         status_message: ""
         proto_major: 0
@@ -36,11 +36,7 @@ spec:
         - type: error
           data: H4sIAAAAAAAA/wEAAP//AAAAAAAAAAA=
     mocks:
-        - mock-1-0
-        - mock-1-1
+        - mock-5-0
     assertions:
-        noise:
-            - header.etag
-            - body.store._id
-            - body.store.password
-    created: 1679765331794
+        noise: []
+    created: 1679804265832

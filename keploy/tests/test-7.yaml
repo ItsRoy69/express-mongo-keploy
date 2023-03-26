@@ -1,0 +1,47 @@
+version: api.keploy.io/v1beta2
+kind: Http
+name: test-7
+spec:
+    metadata: {}
+    req:
+        method: POST
+        proto_major: 0
+        proto_minor: 0
+        url: /stores/login
+        header:
+            accept: '*/*'
+            accept-encoding: gzip, deflate, br
+            connection: close
+            content-length: "67"
+            content-type: application/json
+            cookie: jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDFmMmY1M2ZlMGEyZGRkY2I1NzEyYjYiLCJpYXQiOjE2Nzk4MDQxNjJ9.ka5wpiriWD5Vv2TGZWCp-cU3CNL5udG7qjrSvCSlUxM
+            host: localhost:8000
+            user-agent: Thunder Client (https://www.thunderclient.com)
+        body: '{"email":"jyotirmoyroy649@gmail.com","password":"roy649@gmail.com"}'
+        body_type: utf-8
+    resp:
+        status_code: 200
+        header:
+            access-control-allow-origin: '*'
+            content-length: "1234"
+            content-type: application/json; charset=utf-8
+            etag: W/"4d2-fs3WLJ3X8qqFi9hE82uDXDd+i80"
+            set-cookie: jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDFmMmY1M2ZlMGEyZGRkY2I1NzEyYjYiLCJpYXQiOjE2Nzk4MDQyOTJ9.hHrc6tez3JTzzyotcfpog2gkbJhjFATTSvDL2zA86mQ; Path=/; Expires=Sun, 26 Mar 2023 20:58:12 GMT; HttpOnly
+            x-powered-by: Express
+        body: '{"message":"Logged In Successfully!","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDFmMmY1M2ZlMGEyZGRkY2I1NzEyYjYiLCJpYXQiOjE2Nzk4MDQyOTJ9.hHrc6tez3JTzzyotcfpog2gkbJhjFATTSvDL2zA86mQ","success":true,"user":{"_id":"641f2f53fe0a2dddcb5712b6","admin":"jyotirmoyroy649@gmail.com","email":"jyotirmoyroy649@gmail.com","password":"$2b$10$99H6tVw85PeEg3ZY8mTDTOyJiIsvoy1OjOMsfx5gCfNFqGUBazauu","items":["Car"],"address":"102 MB","tokens":[{"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDFmMmY1M2ZlMGEyZGRkY2I1NzEyYjYiLCJpYXQiOjE2Nzk3NjU0NDB9.8JwYy3s86KwXAZ323RvRzi3IRA7FSNI_ygDxIpKydP8","_id":"641f2fc08a1abcbd222c4a90"},{"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDFmMmY1M2ZlMGEyZGRkY2I1NzEyYjYiLCJpYXQiOjE2Nzk4MDE2NDV9.OT-nY_vtTCHPIJb-vxxDJRmufHE9W_cPxrqGCRxUO9I","_id":"641fbd2d0e5f0eb086728443"},{"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDFmMmY1M2ZlMGEyZGRkY2I1NzEyYjYiLCJpYXQiOjE2Nzk4MDQxNjJ9.ka5wpiriWD5Vv2TGZWCp-cU3CNL5udG7qjrSvCSlUxM","_id":"641fc702f1e0810798a49118"},{"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDFmMmY1M2ZlMGEyZGRkY2I1NzEyYjYiLCJpYXQiOjE2Nzk4MDQyOTJ9.hHrc6tez3JTzzyotcfpog2gkbJhjFATTSvDL2zA86mQ","_id":"641fc784f46cfff7a1dbe634"}],"__v":4}}'
+        body_type: utf-8
+        status_message: ""
+        proto_major: 0
+        proto_minor: 0
+    objects:
+        - type: error
+          data: H4sIAAAAAAAA/wEAAP//AAAAAAAAAAA=
+    mocks:
+        - mock-7-0
+        - mock-7-1
+    assertions:
+        noise:
+            - header.etag
+            - header.set-cookie
+            - body.user.tokens._id
+    created: 1679804292358

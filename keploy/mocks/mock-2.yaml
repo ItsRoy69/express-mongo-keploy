@@ -3,11 +3,26 @@ kind: Generic
 name: mock-2-0
 spec:
     metadata:
-        filter: '{"email":"jyotirmoyroy@gmail.com"}'
+        filter: '{"email":"jyotirmoyroy649@gmail.com"}'
         name: findOne
         type: NO_SQL
     objects:
         - type: string
           data: H4sIAAAAAAAA/1IqzUtJTcvMS01RAgQAAP//1MECtwsAAAA=
         - type: object
-          data: H4sIAAAAAAAA/7zV4Y6qOB8G8FuZNCd5vzi+hUJp/bQKqKCAoo6DmxPTlqIgiIrKwMm594272WTHC/AbaUPKLw9P/7/ANo1BD2BNoVznRNEQ16RQBNcYljwBHcDiIj2CHnCb8ppeirJ5C8sGdIAsWJqDHsj+Xb+UzR+7x2JXlAXogOranCToAU+KPTumguVvi315qh5bR1Y8tsKy+V/1Nkkv7MhAB5xYVdXl5fFBP1T+Q4E/DNdOd+U820DXXOL1xPzsB+5tF2Q3umjczf8P5pH7FyK7cdwEn8uP3K5nj7PTqywq0PsTmOwCfj4Q8UVWFegBBapv3uAtLFnceTNZLm7X6+Psa3mQx8crv/55BD0gG3fPRyINUtdZtY7ip07lHENdmA52DqfPD9OlXdm4CVvP0yB1VN+y9Sj7SAPLhp7qwM3a+4pUB0bLTR4VUTo13VP0OU+DzFb99gA9a6cF1oZ2Ezr0+3fdxet7ScUmdfVi7OL3iKqVog+3Z9nu3/fmEA5ONuj8NzKZYMJVzKVEEsUCJUIBvzuvJCz7mp/ltCut0XQ9kHlor0dqvIgzLtShdbLq4arAfS4Xhhfaq3zRZt43gsBcZ4JhyBIFa9TQ44S+nKB7y5x2M3963Fxukz3ZDZvk6lWngG1Jk9/bmvQx2zTzFha5trNX9hNBGpqKFUGgECzGkqva6wn+40daE7TYn/x02I8Wo0lxPdz7VqQ12BgEIRrKbHQMzSBLxfy2+04woIqoLlAsiapgA0GCX02w68CKadec3kJcjKdfeH85p2PkTwaT7fSmZ+PLrLEaMkPHTUSSupbaE4EkCtaZVBI1wUJiarCXE1rf8mnXck0rfddk0YwX1mQceLXurwbr8xzWjpEthXJs08k99FATfScQknBDUKbrhKJETRJdfT3h7xTuSzaIiJFrAqHLTKXTU5r25yI2ZwT78P2K7t5XMaHZvn2qM+GcaUJXEBKUIEVi+PI629BrB7Q7a6zZvZ+G58xRYzNyZYCnvHQqZG/VtdI3R5zyPfKz0HhOQWI1TjhBCYuJ1KTOk9cT/GxAu1UwrLO8nJrynO1W2WK1PHCKPviw+rqnO2R++e6p739YYeZ8J1CoQYF1qqg6IiQRnL++CzB4dGEzN7fL1NbZfXS8LK5QLhLGhzW9rz+bNB9c2xLVwYrLz3H1RFA4NqRKVGzoCSIc8ZePNlv1HqPNKoPDe+Atx5/nlavfyuBoXpfUJU5WtmZ5mjg4Hs0iR18XT3OBshgmkqgGlJISDiF//aWq+o86r04V0XfR2NTD02BnwKy91yw7eKsqh+152Ed7s86L6yqunrpAeRJLorFYGCxJZCKU16eA/OWQdjkU8WV3G12CAI58a8jqkN1KpCemvSabUHycN2h1Q/OyEd8JTDUkpEiHUHBDoQZHBvj9swO22zvoKej3XwEAAP//aXAgQwQLAAA=
+          data: H4sIAAAAAAAA/4TO3U7DIADF8VcxJ70kprAVV67M5ncy68U0UbM0dEDDlKHANtH47oYn8O5c/JLz/0FvFQT4lBpmmonRtWRKqc3QnFE2cBBI5ewOAtvskw3O5+Azn7bno5P2/XTjHQh02f+YDxnj0YfyVrGhonXVtjc8PR1nzYO+HCcvzzO3ulh1+c7exoPPtNt2y2i+mnFh7q8+rx/n8lvu9yCwSbsI8YqFDFiXQhV0jBCgNTtZzkGQ/JveFbMm6PsDRP37FwAA//9r/Xuq6wAAAA==
+---
+version: api.keploy.io/v1beta2
+kind: Generic
+name: mock-2-1
+spec:
+    metadata:
+        filter: '{"_id":"641f2f53fe0a2dddcb5712b6","__v":0}'
+        name: updateOne
+        type: NO_SQL
+        update: '{"$set":{"tokens":[{"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDFmMmY1M2ZlMGEyZGRkY2I1NzEyYjYiLCJpYXQiOjE2Nzk3NjU0NDB9.8JwYy3s86KwXAZ323RvRzi3IRA7FSNI_ygDxIpKydP8","_id":"641f2fc08a1abcbd222c4a90"}]},"$inc":{"__v":1}}'
+    objects:
+        - type: string
+          data: H4sIAAAAAAAA/1IqzUtJTcvMS01RAgQAAP//1MECtwsAAAA=
+        - type: object
+          data: H4sIAAAAAAAA/6pWSkzOzssvz0lNSU9NUbIqKSpN1VHKzU/JTMtMTXHOL80rUbIy1FEqLShOLSpJTfFMUbLKK83JQYhA1RjoKOUmliRnIDTVAgIAAP///zrTjFwAAAA=

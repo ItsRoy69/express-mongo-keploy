@@ -3,7 +3,7 @@ kind: Generic
 name: mock-1-0
 spec:
     metadata:
-        filter: '{"email":"jyohirmoyroy@gmail.com"}'
+        filter: '{"email":"jyotirmoyroy649@gmail.com"}'
         name: findOne
         type: NO_SQL
     objects:
@@ -17,11 +17,11 @@ kind: Generic
 name: mock-1-1
 spec:
     metadata:
-        document: '{"name":"Jyotirmoy Roy","email":"jyohirmoyroy@gmail.com","profession":"Mechanic","password":"$2b$10$pcwxBChiANmqQAYF1dmKg.Xa17uuPpTBsAcrwbClPoYDPLXTqaJ.i","_id":"641a92138d7f8f78f8e62014","orders":[],"tokens":[],"__v":0}'
+        document: '{"admin":"jyotirmoyroy649@gmail.com","email":"jyotirmoyroy649@gmail.com","password":"$2b$10$99H6tVw85PeEg3ZY8mTDTOyJiIsvoy1OjOMsfx5gCfNFqGUBazauu","items":["Car"],"address":"102 MB","_id":"641f2f53fe0a2dddcb5712b6","tokens":[],"__v":0}'
         name: insertOne
         type: NO_SQL
     objects:
         - type: string
           data: H4sIAAAAAAAA/1IqzUtJTcvMS01RAgQAAP//1MECtwsAAAA=
         - type: object
-          data: H4sIAAAAAAAA/6pWSkzOzssvz0lNSU9NUbIqKSpN1VHKzCtOLSpJTfFMUbJSMjMxTLQ0MjS2SDFPs0gzt0izSDUzMjA0UaoFBAAA//9Dk+U6PQAAAA==
+          data: H4sIAAAAAAAA/6pWSkzOzssvz0lNSU9NUbIqKSpN1VHKzCtOLSpJTfFMUbJSMjMxTDNKMzVOSzVINEpJSUlOMjU3NEoyU6oFBAAA//9yN20cPQAAAA==

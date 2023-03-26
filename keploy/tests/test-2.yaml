@@ -7,27 +7,28 @@ spec:
         method: POST
         proto_major: 0
         proto_minor: 0
-        url: /stores/register
+        url: /stores/login
         header:
             accept: '*/*'
             accept-encoding: gzip, deflate, br
             connection: close
-            content-length: "127"
+            content-length: "67"
             content-type: application/json
-            cookie: jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDE5YjViODE0M2I0ZWMxY2I0YTZlYmYiLCJpYXQiOjE2Nzk0MDg4ODZ9.f9FNAv5J6Wvo9cZiJ5mHJ6-Y92s15F_qezh-hCF0BpE
+            cookie: jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDFmMWU3N2NhOTM0ZjM1Y2YxZjNmMDYiLCJpYXQiOjE2Nzk3NjMxNTd9.ZEQ2ksVMtUrdIfelqF-9Gb9DCQkZ0na8vqFPnnpxHkA
             host: localhost:8000
             user-agent: Thunder Client (https://www.thunderclient.com)
-        body: '{"admin":"jyotirmoyroy@gmail.com","email":"jyotirmoyroy@gmail.com","password":"abcd1234","address":"102 MB Road","items":"car"}'
+        body: '{"email":"jyotirmoyroy649@gmail.com","password":"roy649@gmail.com"}'
         body_type: utf-8
     resp:
-        status_code: 422
+        status_code: 200
         header:
             access-control-allow-origin: '*'
-            content-length: "33"
+            content-length: "649"
             content-type: application/json; charset=utf-8
-            etag: W/"21-Pbp3birho+f3pzU8OXh8UQABxxY"
+            etag: W/"289-YiqbuBbIRVTAOorBM2Vk/tyWZ08"
+            set-cookie: jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDFmMmY1M2ZlMGEyZGRkY2I1NzEyYjYiLCJpYXQiOjE2Nzk3NjU0NDB9.8JwYy3s86KwXAZ323RvRzi3IRA7FSNI_ygDxIpKydP8; Path=/; Expires=Sun, 26 Mar 2023 10:10:40 GMT; HttpOnly
             x-powered-by: Express
-        body: '{"error":"store already exists."}'
+        body: '{"message":"Logged In Successfully!","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDFmMmY1M2ZlMGEyZGRkY2I1NzEyYjYiLCJpYXQiOjE2Nzk3NjU0NDB9.8JwYy3s86KwXAZ323RvRzi3IRA7FSNI_ygDxIpKydP8","success":true,"user":{"_id":"641f2f53fe0a2dddcb5712b6","admin":"jyotirmoyroy649@gmail.com","email":"jyotirmoyroy649@gmail.com","password":"$2b$10$99H6tVw85PeEg3ZY8mTDTOyJiIsvoy1OjOMsfx5gCfNFqGUBazauu","items":["Car"],"address":"102 MB","tokens":[{"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDFmMmY1M2ZlMGEyZGRkY2I1NzEyYjYiLCJpYXQiOjE2Nzk3NjU0NDB9.8JwYy3s86KwXAZ323RvRzi3IRA7FSNI_ygDxIpKydP8","_id":"641f2fc08a1abcbd222c4a90"}],"__v":1}}'
         body_type: utf-8
         status_message: ""
         proto_major: 0
@@ -37,6 +38,10 @@ spec:
           data: H4sIAAAAAAAA/wEAAP//AAAAAAAAAAA=
     mocks:
         - mock-2-0
+        - mock-2-1
     assertions:
-        noise: []
-    created: 1679463044079
+        noise:
+            - header.set-cookie
+            - body.user.tokens._id
+            - header.etag
+    created: 1679765440792
